@@ -20,7 +20,5 @@ class MainActivity : AppCompatActivity() {
     fun login(view:View){
         
     }
-    fun register(view:View){
 
-    }
 }

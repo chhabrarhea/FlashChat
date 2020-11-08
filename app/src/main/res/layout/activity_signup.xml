@@ -28,7 +28,7 @@
             android:layout_marginTop="20dp"
             android:fontFamily="@font/poppins_medium"
             android:id="@+id/welcome"
-            android:text="Login with Email and Password"
+            android:text="Register with Email and Password"
             android:alpha="10"
             android:textColor="@color/white"
             android:textSize="20sp" />
@@ -61,66 +61,34 @@
             android:hint="Password"
             android:paddingHorizontal="20dp"
             android:paddingVertical="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/edittext"
+            android:layout_below="@id/password"
+            android:layout_marginTop="10dp"
+            android:id="@+id/cpassword"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Confirm Password"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"/>
 
         <Button
             android:layout_width="130dp"
             android:layout_height="58dp"
             android:backgroundTint="@color/accent"
-            android:layout_marginTop="180dp"
-             android:layout_centerHorizontal="true"
+            android:layout_below="@id/cpassword"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
             android:text="Login"
             android:onClick="login"
             android:fontFamily="@font/poppins_bold"
             android:id="@+id/login"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="30dp"
-            android:layout_below="@id/login"
-            android:fontFamily="@font/poppins_medium"
-            android:id="@+id/other"
-            android:text="Recieve OTP"
-            android:alpha="10"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/other"
-            android:layout_marginHorizontal="30dp"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/linear"
-            >
-            <com.hbb20.CountryCodePicker
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:ccp_arrowColor="@color/white"
-                app:ccp_contentColor="@color/white"
-                android:id="@+id/code"
-                app:ccp_flagBorderColor="@color/white"
-                app:ccp_autoDetectCountry="true"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/number"
-                android:backgroundTint="@color/white"
-                android:inputType="number"
-                android:textColor="@color/white"/>
-
-        </LinearLayout>
-        <Button
-            android:layout_width="130dp"
-            android:layout_height="58dp"
-            android:backgroundTint="@color/accent"
-            android:layout_marginTop="10dp"
-            android:layout_centerHorizontal="true"
-            android:text="Send OTP"
-            android:onClick="login"
-            android:layout_below="@id/linear"
-            android:fontFamily="@font/poppins_bold"
-            android:id="@+id/send"/>
 
         <LinearLayout
             android:layout_width="wrap_content"

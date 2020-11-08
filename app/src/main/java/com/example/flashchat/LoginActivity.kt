@@ -29,9 +29,21 @@ class LoginActivity : AppCompatActivity() {
         auth= FirebaseAuth.getInstance()
     }
     fun login(view: View) {
+        if(code.fullNumber.isEmpty()){
+            number.setError("Phone number is required")
+            number.requestFocus()
+            return
+        }
+        if (!code.isValidFullNumber)
+        {
+            number.setError("Invalid Number")
+            number.requestFocus()
+            return
+        }
+        else{
         var number: String = code.fullNumber
         var intent=Intent(applicationContext,OtpActivity::class.java)
         intent.putExtra("num",number)
-        startActivity(intent)
+        startActivity(intent)}
     }
 }
