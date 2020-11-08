@@ -84,8 +84,8 @@
             android:layout_below="@id/cpassword"
             android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
-            android:text="Login"
-            android:onClick="login"
+            android:text="Register"
+            android:onClick="signup"
             android:fontFamily="@font/poppins_bold"
             android:id="@+id/login"/>
 
@@ -100,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:text="Not a Member?"
+                android:text="Already a Member?"
                 android:textSize="20sp"
                 android:fontFamily="@font/poppins_light"
                 android:textColor="@color/black"
@@ -111,10 +111,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:fontFamily="@font/poppins_medium"
-                android:text=" Register."
+                android:text=" Login."
                 android:textColor="@color/accent"
                 android:id="@+id/register"
-                android:onClick="register"
+                android:onClick="login"
                 android:textSize="20sp" />
         </LinearLayout>
 
